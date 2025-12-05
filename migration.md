@@ -1,6 +1,6 @@
 # Migration cPanel → cPanel (Rsync Method - Zero Downtime)
 
-### Screen (WAJIB GUNA BIAR TAK PUTUS)
+### Screen (WAJIB BILA DATA BESAR)
 **`screen`**                               → masuk screen baru  
 **Ctrl + A → D**                           → keluar tanpa mati proses  
 **`screen -ls`**                           → tengok senarai screen running  
