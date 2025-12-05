@@ -1,25 +1,33 @@
-### Find command power 
+# Find Command Power – Sysadmin Daily Driver (2025)
 
-**`find /path -type f -o -type d | grep -i "ips"`**  
-→ Cari file **atau** folder yang ada keyword “ips” (case-insensitive)
+1. **Cari file atau folder ada keyword (case-insensitive)**  
+   **`find /path -type f -o -type d | grep -i "ips"`**
 
-**`find . -type f -name "*.php" -size 0 -delete`**  
-→ Padam semua file PHP kosong (0 byte) — bersihkan server terkontang-katang
+2. **Padam semua file PHP kosong (0 byte)**  
+   **`find . -type f -name "*.php" -size 0 -delete`**  
+   → bersihkan server terkontang-katang
 
-**`find . -name ".htaccess" -exec grep -l "about\|radio\|index\|content" {} \;`**  
-→ Cari semua .htaccess yang ada rule blok/tuju ke about.php / radio.php / index.php / content.php (berguna masa audit security)
+3. **Cari .htaccess yang block/redirect ke file tertentu**  
+   **`find . -name ".htaccess" -exec grep -l "about\|radio\|index\|content" {} \;`**  
+   → berguna masa audit security / cari redirect jahat
 
-**`find /var/www -type f -name "*.log" -size +500M -exec ls -lh {} \;`**  
-→ Cari log file >500MB (biasanya penyebab disk penuh)
+4. **Cari log file >500MB (penyebab disk penuh)**  
+   **`find /var/www -type f -name "*.log" -size +500M -exec ls -lh {} \;`**
 
-**`find / -type f -perm -4000 -o -perm -2000 -exec ls -la {} \; 2>/dev/null`**  
-→ Cari file SUID/SGID (berbahaya kalau ada yang tak patut)
+5. **Cari file SUID/SGID (bahaya kalau tak patut)**  
+   **`find / -type f -perm -4000 -o -perm -2000 -exec ls -la {} \; 2>/dev/null`**
 
-**`find . -type f -mtime -7 -ls`**  
-→ Senarai file yang diubah dalam 7 hari terakhir (berguna masa forensik)
+6. **Senarai file yang diubah dalam 7 hari terakhir (forensik)**  
+   **`find . -type f -mtime -7 -ls`**
 
-**`find /tmp -name "sess_*" -type f -mtime +1 -delete`**  
-→ Auto bersihkan session PHP lama dalam /tmp (cron job sedap)
+7. **Auto bersihkan session PHP lama dalam /tmp (letak cron)**  
+   **`find /tmp -name "sess_*" -type f -mtime +1 -delete`**
 
-**`find . -type f -name "*.bak" -o -name "*~" -delete`**  
-→ Padam semua backup file (~) dan .bak secara beramai-ramai
+8. **Padam semua backup file (~ dan .bak)**  
+   **`find . -type f -name "*.bak" -o -name "*~" -delete`**
+
+9. **Bonus: Cari hidden folder/file (malware suka sorok)**  
+   **`find /var/www -type d -name ".*" -ls 2>/dev/null`**
+
+10. **Bonus: Cari file besar >1GB seluruh server**  
+    **`find / -type f -size +1G -exec ls -lh {} \; 2>/dev/null | head -20`**
