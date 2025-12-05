@@ -14,7 +14,7 @@
 **`tar -xzvf cpmove-username.tar.gz username/homedir/public_html/namafolder/`**  
 → extract folder tertentu je
 
-**Contoh**
+**Contoh:**
 **`tar -xzvf maistcom.tar.gz maistcom/homedir/public_html/myteras.com/`**
 
 ### 3. Extract satu domain je (paling kerap aku guna)
