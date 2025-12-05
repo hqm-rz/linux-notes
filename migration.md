@@ -1,4 +1,4 @@
-# Migration cPanel → cPanel (Prosedur Aku Ikut Setiap Kali – Zero Downtime)
+# Migration cPanel → cPanel (Rsync Method - Zero Downtime)
 
 ### Screen (WAJIB GUNA BIAR TAK PUTUS)
 **`screen`**                               → masuk screen baru  
