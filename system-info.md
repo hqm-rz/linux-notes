@@ -1,19 +1,30 @@
-### Tengok OS & kernel
-**`cat /etc/os-release`**      → nama distro + versi (semua distro ada)  
-**`uname -a`**                 → kernel + architecture + hostname  
-**`hostnamectl`**              → info lengkap (systemd server)  
-**`lsb_release -a`**           → Ubuntu/Debian je, kalau takde install dulu
+# 01 – System Info & Hardware
 
-### CPU info
-**`lscpu | grep -E "Model name|Core|Thread"`** → model + core + thread sekilas  
-**`nproc`**                    → berapa core boleh guna (make -j, rsync -j, dll)  
-**`cat /proc/cpuinfo | grep "cpu cores" | uniq`** → real core (bukan HT)
+### Info OS & Kernel
+| Command                  | Description                                    | Catatan                    |
+|--------------------------|------------------------------------------------|----------------------------|
+| **`cat /etc/os-release`**    | Papar nama + versi distro                      | Semua distro               |
+| **`lsb_release -a`**         | Detail Ubuntu/Debian                           | Install kalau takde        |
+| **`uname -a`**               | Kernel + architecture + hostname               | Paling ringkas             |
+| **`hostnamectl`**            | Info lengkap (systemd)                         | CentOS/Ubuntu 16.04+       |
 
-### RAM usage
-**`free -h`**                  → total/used/available, human readable  
-**`cat /proc/meminfo | grep -i memtotal`** → kalau nak exact number
+### CPU
+| Command                  | Description                                    |
+|--------------------------|------------------------------------------------|
+| **`lscpu ‑‑extended`**      | Model, core, thread, cache                     |
+| **`nproc`**                  | Jumlah core (untuk make -j, parallel rsync)    |
+| **`cat /proc/cpuinfo ‑‑count`** | Berapa core real + hyper-threading         |
 
-### Disk apa ada
-**`lsblk -o NAME,SIZE,TYPE,MOUNTPOINT,MODEL`** → paling cantik  
-**`lsblk -d -o NAME,SIZE,MODEL,ROTA`** → ROTA 1=HDD, 0=SSD  
-**`df -hT`**                   → usage + filesystem type
+### Memory
+| Command                  | Description                                    |
+|--------------------------|------------------------------------------------|
+| **`free -h`**                | Total, used, available (human readable)       |
+| **`vmstat -s`**              | Detail swap usage                              |
+| **`cat /proc/meminfo`**      | Kalau nak detail gila                          |
+
+### Disk & Storage
+| Command                  | Description                                    |
+|--------------------------|------------------------------------------------|
+| **`lsblk -d -o NAME,SIZE,MODEL,ROTA`** | Senarai disk (ROTA=1=HDD, 0=SSD)        |
+| **`df -hT`**                 | Disk usage + filesystem type                   |
+| **`smartctl -i /dev/sda`**   | Check SMART support                            |
