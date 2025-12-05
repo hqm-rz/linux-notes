@@ -25,7 +25,7 @@
 8. **Cari file SUID/SGID (bahaya kalau tak patut)**  
    **`find / -type f -perm -4000 -o -perm -2000 -exec ls -la {} \; 2>/dev/null`**
 
-9. **Check 5 baris pertama index.php / wp-login.php**  (WordPress)
+9. **Check 5 baris pertama index.php / wp-login.php**  (WordPress)  
    **`find / \( -name "index.php" -o -name "wp-login.php" \) -exec head -n 5 {} \; | grep -i "eval\|<?php.*@.*eval"`**
 
 10. **Nuke semua PHP ada function bahaya (LAST RESORT)**  
