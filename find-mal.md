@@ -1,4 +1,4 @@
-# Find Command Gila-Gila – Malware Hunting & Emergency Cleanup (2025)
+# Find Command – Malware Hunting & Emergency Cleanup
 
 1. **Cari file sus (disguised webshell)**  
    **`find / \( -name "*.ico" -o -name "*.php.jpg" -o -name "*.phtml" -o -name ".env" \) -exec ls -la {} \; 2>/dev/null`**  
