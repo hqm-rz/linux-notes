@@ -1,4 +1,4 @@
-Senarai command Linux server yang aku selalu lupa. Update ikut keperluan.
+Useful Linux-Commands & Troubleshooting Notes 
 
 ## Quick Access
 - [System Info](system-info.md)
