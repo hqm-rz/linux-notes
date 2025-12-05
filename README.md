@@ -4,7 +4,6 @@ Useful Linux-Commands & Troubleshooting Notes
 - [System Info](system-info.md)
 - [Find Command](find-any.md)
 - [Find Malware](find-mal.md)
-- [Migration](migration.md)
-- [SSH Hardening](09-ssh-hardening.md)
+- [Migration](migration.md)  
 
 Search je dalam repo ni guna Ctrl+F kalau emergency!
