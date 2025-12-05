@@ -1,7 +1,11 @@
-Basic Linux Sbin Command  
-```bash
-  `ls [options] [directory_or_path]
-  `pwd [options]`  
-  `cd [path_or_directory]`  
-  `mkdir [options] directory_name1 directory_name2`  
-  
+### My Servers
+
+1. **prod-web01** • Ubuntu 24.04  
+   ➜ `cat /etc/os-release` → Ubuntu 24.04.1 LTS  
+   ➜ `uname -a` → Linux prod-web01 6.8.0-51-generic x86_64  
+   ➜ Services: nginx 🟢 redis 🟢 mysql 🟢
+
+2. **db01** • Debian 12  
+   ➜ `cat /etc/os-release` → Debian GNU/Linux 12 (bookworm)  
+   ➜ `uname -a` → Linux db01 6.1.0-26-amd64 x86_64  
+   ➜ Services: mariadb 🟢 postgres 🟢 docker 🟢
