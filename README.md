@@ -1,12 +1,10 @@
-# linux-notes
-Useful Linux-Commands &amp; Troubleshooting Notes
-
-Update dari semasa ke semasa :)
+Senarai command Linux server yang aku selalu lupa. Update ikut keperluan.
 
 ## Quick Access
-- [01 System Info & Hardware](system-info.md)
-- [02 Users & Groups](02-users-groups.md)
-- [03 File Permissions](03-file-permissions.md)
-- [04 Process Management ← KILLER](04-process-management.md)
-- [05 Disk & Storage](05-disk-usage.md)
-- [06 Find Command](find-any.md)
+- [System Info](01-system-info.md)
+- [Users & Groups](02-users-groups.md)
+- [Networking](06-networking.md)
+- [Package Management](07-package-management/ubuntu-debian.md)
+- [SSH Hardening](09-ssh-hardening.md)
+
+Search je dalam repo ni guna Ctrl+F kalau emergency!
