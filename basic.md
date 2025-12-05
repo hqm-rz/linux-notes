@@ -1,4 +1,4 @@
-Basic Command :
+###Basic Command :
 
   **ls [options] [directory_or_path]
   **pwd [options]
