@@ -1,7 +1,7 @@
 Senarai command Linux server yang aku selalu lupa. Update ikut keperluan.
 
 ## Quick Access
-- [System Info](01-system-info.md)
+- [System Info](system-info.md)
 - [Users & Groups](02-users-groups.md)
 - [Networking](06-networking.md)
 - [Package Management](07-package-management/ubuntu-debian.md)
