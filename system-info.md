@@ -8,6 +8,9 @@
 **`lscpu | grep -E "Model name|Core|Thread"`** → model + core + thread sekilas  
 **`nproc`**                    → berapa core boleh guna (make -j, rsync -j, dll)  
 **`cat /proc/cpuinfo | grep "cpu cores" | uniq`** → real core (bukan HT)
+lscpu
+**`cat /proc/cpuinfo`**   
+**` nproc `**                         # berapa core boleh guna parallel
 
 ### RAM usage
 **`free -h`**                  → total/used/available, human readable  
