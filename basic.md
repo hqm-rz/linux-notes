@@ -1,4 +1,7 @@
-###Basic Command :
+Markdown
+```bash
+
+##Basic Command :
 
   **`ls [options] [directory_or_path]`
   **`pwd [options]`
