@@ -1,6 +1,6 @@
 Basic Linux Sbin Command  
 
-  `ls [options] [directory_or_path]`   
+  `ls [options] [directory_or_path]`  
   
   `pwd [options]`  
   `cd [path_or_directory]`  
