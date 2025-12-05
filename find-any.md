@@ -1,4 +1,4 @@
-### Find command power (sysadmin wajib hafal)
+### Find command power 
 
 **`find /path -type f -o -type d | grep -i "ips"`**  
 → Cari file **atau** folder yang ada keyword “ips” (case-insensitive)
