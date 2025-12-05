@@ -1,7 +1,7 @@
 # linux-notes
 Useful Linux-Commands &amp; Troubleshooting Notes
 
-Update ikut pengalaman real, bukan copy-paste je.
+Update dari semasa ke semasa :)
 
 ## Quick Access
 - [01 System Info & Hardware](system-info.md)
