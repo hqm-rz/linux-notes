@@ -4,7 +4,7 @@ Useful Linux-Commands &amp; Troubleshooting Notes
 Update ikut pengalaman real, bukan copy-paste je.
 
 ## Quick Access
-- [01 System Info & Hardware](01-system-info.md)
+- [01 System Info & Hardware](system-info.md)
 - [02 Users & Groups](02-users-groups.md)
 - [03 File Permissions](03-file-permissions.md)
 - [04 Process Management ← KILLER](04-process-management.md)
